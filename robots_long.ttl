@@ -1,0 +1,160 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rob: <http://example.org/robots/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rob:turtlebot1 a rob:WheeledRobot ;
+	rob:hasCapability rob:perception ;
+	rob:hasCapability rob:navigation ;
+    rdfs:label "Turtlebot 1"@en ;
+    rob:hasGBMemory 2 ;
+    rob:hasSensor rob:turtlebot_kinect .
+
+rob:nao a rob:LeggedRobot ;
+	rob:hasCapability rob:perception ;
+	rob:hasCapability rob:vocal_interaction ;
+    rdfs:label "Aldebaran NAO"@en ;
+    rob:hasGBMemory 1 ;
+	rob:hasPart rob:nao_part;
+	rob:hasPart rob:nao_left_feet;
+	rob:hasPart rob:nao_right_feet;
+	rob:hasPart rob:nao_left_arm;
+	rob:hasPart rob:nao_right_arm;
+    rob:hasSensor rob:nao_sonar .
+
+rob:turtlebot3burger a rob:WheeledRobot ;
+	rob:hasCapability rob:perception ;
+	rob:hasCapability rob:navigation ;
+    rdfs:label "Turtlebot 3 Burger"@en ;
+    rob:hasGBMemory 2 ;
+	rob:hasPart rob:open_manipulator ; 
+    rob:hasSensor rob:burger_lidar .
+
+rob:turtlebot3waffle a rob:WheeledRobot ;
+	rob:hasCapability rob:perception ;
+	rob:hasCapability rob:navigation ;
+    rdfs:label "Turtlebot 3 Waffle"@en ;
+    rob:hasGBMemory 2 ;
+    rob:hasSensor rob:waffle_lidar ;	
+	rob:hasSensor rob:waffle_intel .
+
+rob:PR2 a rob:NonMovingRobot ;
+    rdfs:label "PR 2"@en ;
+    rob:hasGBMemory 24 ;
+	rob:hasCapability rob:manipulation ;
+	rob:hasCapability rob:perception ;
+	rob:hasCapability rob:vision ;
+	rob:hasPart rob:pr2_left_arm ; 
+	rob:hasPart rob:pr2_right_arm ;	
+	rob:hasPart rob:pr2_head ;
+    rob:hasSensor rob:pr2_hokuyo .
+
+rob:manipulation a rob:Capability ;
+    rdfs:label "Manipulation Capability"@en .
+	
+rob:navigation a rob:Capability ;
+    rdfs:label "Navigation Capability"@en .
+	
+rob:perception a rob:Capability ;
+    rdfs:label "Perception Capability"@en .
+	
+rob:vision a rob:Capability ;
+    rdfs:label "Vision Capability"@en .
+	
+rob:vocal_interaction a rob:Capability ;
+    rdfs:label "Vocal Interaction"@en .
+
+rob:nao_part a rob:RobotPart ;
+    rdfs:label "part"@en .
+
+rob:nao_left_feet a rob:RobotFeet ;
+    rdfs:label "left feet"@en . 
+
+rob:nao_right_feet a rob:RobotFeet ;
+    rdfs:label "right feet"@en .
+
+rob:nao_left_arm a rob:RobotArm ;
+    rdfs:label "left arm"@en .
+
+rob:nao_right_arm a rob:RobotArm ;
+    rdfs:label "right arm"@en .
+
+rob:RobotFeet rdfs:subClassOf rob:Part ;
+    rdfs:label "Feet of a robot"@en .
+
+rob:pr2_left_arm a rob:Arm ;
+	rdfs:label "PR2 Left Arm"@en .
+		
+rob:pr2_right_arm a rob:Arm ;
+	rob:hasLength "400 mm"^^xsd:string;
+	rob:hasDOF "4"^^xsd:integer;
+    rdfs:label "PR2 Right Arm"@en .	
+
+rob:open_manipulator a rob:Arm ; 
+	rob:hasLength "380 mm"^^xsd:string;
+	rdfs:label "OpenManipulator-X"@en ;
+	rob:hasDOF "5"^^xsd:integer  .
+		
+rob:pr2_head a rob:Head ;
+    rdfs:label "PR2 Head Arm"@en .	
+
+rob:turtlebot_kinect a rob:KinectSensor ;
+    rdfs:label "Microsoft Kinect"@en .
+
+rob:burger_lidar a rob:LidarSensor ;
+    rdfs:label "Burger Lidar Sensor"@en .
+
+rob:waffle_lidar a rob:LidarSensor ;
+    rdfs:label "Waffle Lidar Sensor"@en .
+
+rob:waffle_intel a rob:IntelRealSenseSensor ;
+    rdfs:label "Waffle Intel Realsense R200"@en .
+	
+rob:pr2_hokuyo a rob:LaserScannerSensor ;
+    rdfs:label "Hokuyo UTM-30LX Laser Scanner"@en .	
+
+rob:nao_sonar a rob:SonarSensor ;
+    rdfs:label "Nao Ultrasonic Sensor (sonar)"@en .
+
+rob:SonarSensor rdfs:subClassOf rob:Sensor .
+
+rob:KinectSensor rdfs:subClassOf rob:Sensor .
+
+rob:LaserScannerSensor rdfs:subClassOf rob:Sensor .
+
+rob:IntelRealSenseSensor rdfs:subClassOf rob:Sensor .
+
+rob:LidarSensor rdfs:subClassOf rob:Sensor .
+
+rob:Head rdfs:subClassOf rob:RobotPart . 
+
+rob:Arm rdfs:subClassOf rob:RobotPart . 
+
+rob:WheeledRobot rdfs:subClassOf rob:Robot .
+
+rob:LeggedRobot rdfs:subClassOf rob:Robot .
+
+rob:hasLength rdfs:domain rob:RobotPart ;
+	rdfs:label "Length of the part"@en ;
+    rdfs:range xsd:string .
+
+rob:hasDOF rdfs:domain rob:RobotPart ;
+	rdfs:label "degrees of freedom"@en ;
+    rdfs:range xsd:integer .	
+
+rob:hasPart rdfs:domain rob:Robot ;
+	rdfs:label "robot part"@en ;
+    rdfs:range rob:RobotPart .
+
+rob:hasGBMemory rdfs:domain rob:Robot ;
+	rdfs:label "has GB memory"@en ;
+    rdfs:range rdfs:Literal .
+
+rob:hasSensor rdfs:domain rob:Robot ;
+	rdfs:label "has sensor"@en ;
+    rdfs:range rob:Sensor .
+
+rob:hasCapability rdfs:domain rob:Robot ;
+	rdfs:label "has capability"@en ;
+    rdfs:range rob:Capability .

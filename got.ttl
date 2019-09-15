@@ -1,0 +1,33 @@
+prefix fn: <http://www.w3.org/2005/xpath-functions#>
+prefix got: <http://example.com/resource/>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sesame: <http://www.openrdf.org/schema/sesame#>
+prefix spif: <http://spinrdf.org/spif#>
+prefix wde: <http://www.wikidata.org/entity/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+got:0 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Robin Arryn" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Arryn" ;
+	owl:sameAs wde:Q23749057 .
+
+got:9 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Theon Greyjoy" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Greyjoy" ;
+	owl:sameAs wde:Q1120793 .
+
+got:13 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Jaime Lannister" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Lannister" ;
+	owl:sameAs wde:Q3806180 .
+
+got:26 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Arya Stark" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Stark" ;
+	owl:sameAs wde:Q3624677 .

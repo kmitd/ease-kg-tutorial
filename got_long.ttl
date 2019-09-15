@@ -1,0 +1,374 @@
+prefix fn: <http://www.w3.org/2005/xpath-functions#>
+prefix got: <http://example.com/resource/>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sesame: <http://www.openrdf.org/schema/sesame#>
+prefix spif: <http://spinrdf.org/spif#>
+prefix wde: <http://www.wikidata.org/entity/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+got:0 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Robin Arryn" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Arryn" ;
+	owl:sameAs wde:Q23749057 .
+
+got:1 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Gregor Clegane" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Clegane" ;
+	owl:sameAs wde:Q26899515 .
+
+got:2 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Sandor Clegane" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Clegane" ;
+	owl:sameAs wde:Q3948140 .
+
+got:4 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Gendry" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Baratheon" ;
+	owl:sameAs wde:Q26944959 .
+
+got:7 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Aeron Greyjoy" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Greyjoy" ;
+	owl:sameAs wde:Q21074994 .
+
+got:8 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Euron Greyjoy" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Greyjoy" ;
+	owl:sameAs wde:Q38137598 .
+
+got:9 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Theon Greyjoy" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Greyjoy" ;
+	owl:sameAs wde:Q1120793 .
+
+got:10 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Yara Greyjoy" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Greyjoy" ;
+	owl:sameAs wde:Q19799441 .
+
+got:11 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Jon Snow" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Targaryen" ;
+	owl:sameAs wde:Q3183235 .
+
+got:12 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Cersei Lannister" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Lannister" ;
+	owl:sameAs wde:Q3665163 .
+
+got:13 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Jaime Lannister" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Lannister" ;
+	owl:sameAs wde:Q3806180 .
+
+got:14 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Tyrion Lannister" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Lannister" ;
+	owl:sameAs wde:Q2076759 .
+
+got:17 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Jorah Mormont" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Mormont" ;
+	owl:sameAs wde:Q3810007 .
+
+got:20 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Ilyn Payne" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Payne" .
+
+got:21 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Podrick Payne" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Payne" ;
+	owl:sameAs wde:Q22253833 .
+
+got:22 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Howland Reed" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Reed" ;
+	owl:sameAs wde:Q55469688 .
+
+got:23 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Meera Reed" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Reed" ;
+	owl:sameAs wde:Q26944965 .
+
+got:25 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Ellaria Sand" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "Sand Snakes" ;
+	owl:sameAs wde:Q24933002 .
+
+got:26 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Arya Stark" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Stark" ;
+	owl:sameAs wde:Q3624677 .
+
+got:27 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Bran Stark" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Stark" ;
+	owl:sameAs wde:Q3643599 .
+
+got:28 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Sansa Stark" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Stark" ;
+	owl:sameAs wde:Q3472490 .
+
+got:29 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Daenerys Targaryen" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Targaryen" ;
+	owl:sameAs wde:Q2708078 .
+
+got:30 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Brienne of Tarth" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Tarth" ;
+	owl:sameAs wde:Q11680307 .
+
+got:31 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Edmure Tully" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Tully" ;
+	owl:sameAs wde:Q23749012 .
+
+got:32 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Jon Arryn" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Arryn" ;
+	owl:sameAs wde:Q19791158 .
+
+got:33 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Lysa Arryn" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Tully" ;
+	got:house-marriage "House Arryn" ;
+	owl:sameAs wde:Q19791067 .
+
+got:34 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Petyr Baelish" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Baelish" ;
+	got:house-marriage "House Arryn" ;
+	owl:sameAs wde:Q4360302 .
+
+got:35 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Joffrey Baratheon" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Baratheon" ;
+	owl:sameAs wde:Q12900597 .
+
+got:36 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Myrcella Baratheon" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Baratheon" ;
+	owl:sameAs wde:Q19799435 .
+
+got:37 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Robert Baratheon" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Baratheon" ;
+	owl:sameAs wde:Q13634885 .
+
+got:38 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Shireen Baratheon" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Baratheon" ;
+	owl:sameAs wde:Q23747242 .
+
+got:39 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Stannis Baratheon" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Baratheon" ;
+	owl:sameAs wde:Q12056060 .
+
+got:40 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Tommen Baratheon" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Baratheon" ;
+	owl:sameAs wde:Q19792294 .
+
+got:41 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Ramsay Bolton" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Bolton" ;
+	owl:sameAs wde:Q19796006 .
+
+got:42 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Roose Bolton" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Bolton" ;
+	owl:sameAs wde:Q19799430 .
+
+got:43 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Arthur Dayne" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Dayne" .
+
+got:45 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Walder Frey" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Frey" ;
+	owl:sameAs wde:Q23782368 .
+
+got:46 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Balon Greyjoy" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Greyjoy" ;
+	owl:sameAs wde:Q23746101 .
+
+got:50 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Kevan Lannister" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Lannister" ;
+	owl:sameAs wde:Q23758900 .
+
+got:52 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Tywin Lannister" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Lannister" ;
+	owl:sameAs wde:Q12902445 .
+
+got:53 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Elia Martell" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Martell" ;
+	got:house-marriage "House Targaryen" ;
+	owl:sameAs wde:Q23780478 .
+
+got:54 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Oberyn Martell" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Martell" ;
+	owl:sameAs wde:Q19359499 .
+
+got:55 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Jeor Mormont" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Mormont" ;
+	owl:sameAs wde:Q12900593 .
+
+got:59 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Jojen Reed" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Reed" ;
+	owl:sameAs wde:Q55433701 .
+
+got:60 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Nymeria Sand" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "Sand Snakes" ;
+	owl:sameAs wde:Q55433555 .
+
+got:66 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Catelyn Stark" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Tully" ;
+	got:house-marriage "House Stark" ;
+	owl:sameAs wde:Q2941743 .
+
+got:67 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Eddard Stark" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Stark" ;
+	owl:sameAs wde:Q259818 .
+
+got:68 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Lyanna Stark" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Stark" ;
+	got:house-marriage "House Targaryen" ;
+	owl:sameAs wde:Q23759071 .
+
+got:69 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Rickard Stark" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Stark" ;
+	owl:sameAs wde:Q23759020 .
+
+got:70 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Rickon Stark" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Stark" ;
+	owl:sameAs wde:Q12815803 .
+
+got:71 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Robb Stark" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Stark" ;
+	owl:sameAs wde:Q13634884 .
+
+got:73 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Alliser Thorne" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Thorne" ;
+	owl:sameAs wde:Q55442011 .
+
+got:74 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Beric Dondarrion" ;
+	<http://xmlns.com/foaf/0.1/status> "Uncertain" ;
+	got:house-birth "House Dondarrion" ;
+	owl:sameAs wde:Q11680202 .
+
+got:76 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Rhaegar Targaryen" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Targaryen" ;
+	owl:sameAs wde:Q20818052 .
+
+got:77 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Aerys II Targaryen" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Targaryen" ;
+	owl:sameAs wde:Q18920152 .
+
+got:79 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Renly Baratheon" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Baratheon" ;
+	owl:sameAs wde:Q18920105 .
+
+got:80 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Brandon Stark" ;
+	<http://xmlns.com/foaf/0.1/status> "Alive" ;
+	got:house-birth "House Stark" ;
+	owl:sameAs wde:Q3643599 .
+
+got:81 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Margaery Tyrell" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Tyrell" ;
+	got:house-marriage "House Baratheon" ;
+	owl:sameAs wde:Q12900933 .
+
+got:82 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Rhaella Targaryen" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Targaryen" ;
+	owl:sameAs wde:Q23746012 .
+
+got:83 a <http://xmlns.com/foaf/0.1/Person> ;
+	rdfs:label "Olenna Tyrell" ;
+	<http://xmlns.com/foaf/0.1/status> "Deceased" ;
+	got:house-birth "House Redwyne" ;
+	got:house-marriage "House Tyrell" ;
+	owl:sameAs wde:Q23748587 .
