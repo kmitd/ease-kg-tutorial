@@ -1,0 +1,70 @@
+@prefix rc: <http://example.org/recipe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rc:RepiceTool rdfs:subClassOf rc:RecipeComponent .
+
+rc:bowl a rc:Container ;
+    rdfs:label "Round Bowl"@en ;
+    rc:contains rc:egg,
+        rc:flour,
+        rc:milk ;
+    rc:size "Large"@en .
+
+rc:contains rdfs:domain rc:Container ;
+    rdfs:range rc:Ingredient .
+
+rc:cup a rc:Container ;
+    rc:size "Medium" .
+
+rc:size rdfs:domain rc:Container ;
+    rdfs:range rdfs:Literal .
+
+rc:spatula a rc:RecipeTool ;
+    rc:spreadOn rc:fryingpan ;
+    rc:spreads rc:butter .
+
+rc:teaspoon a rc:Container ;
+    rc:contains rc:cinnamon,
+        rc:salt,
+        rc:vanilla_sugar ;
+    rc:size "Small" .
+
+rc:weight rdfs:domain rc:Ingredient ;
+    rdfs:range rdfs:Literal .
+
+rc:whisker a rc:RecipeTool .
+
+rc:butter a rc:Ingredient ;
+    rc:weight 20 .
+
+rc:cinnamon a rc:Ingredient ;
+    rc:optionalIngredient true ;
+    rc:weight 5 .
+
+rc:egg a rc:Ingredient ;
+    rc:weight 150 .
+
+rc:flour a rc:Ingredient ;
+    rdfs:label "Plain Flour"@en,
+        "Farine de blé"@fr ;
+    rc:weight 250 .
+
+rc:fryingpan a rc:RecipeTool .
+
+rc:milk a rc:Ingredient ;
+    rc:weight 500 .
+
+rc:salt a rc:Ingredient ;
+    rc:weight 2 .
+
+rc:vanilla_sugar a rc:Ingredient ;
+    rc:optionalIngredient true ;
+    rc:weight 20 .
+
+rc:Container rdfs:subClassOf rc:RecipeComponent .
+
+rc:Ingredient rdfs:subClassOf rc:RecipeComponent .
+
